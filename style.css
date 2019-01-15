@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/* Grid shittii */
+
+
+.header { grid-area: header; }
+.nav {grid-area: nav}
+.image {grid-area: image}
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+.empty2 { grid-area: empty2;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'empty2 empty2 nav'
+    'image image image'
+    'main empty right'
+    'main empty right'
+    'footer footer footer';
+    grid-template-columns: 5fr 1fr 2fr;
+    grid-template-rows: auto;
+  grid-gap: 10px;
+  background-color: #003303;
+  padding: 10px;
+  margin: 0 100px 0 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.grid-container > div {
+  background-color: #f6fff5;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 17px;
+}
+
+.grid-container > .image{
+    padding: 0px;
+}
+
+.grid-container > .header{
+    font-size: 50px;
+}
+
+.grid-container > .empty{
+    grid-column-gap: 0;
+}
+
+
+
+/* I dunno */
+
+
+
+body{
+    background-color: rgb(177, 177, 255);
+}
+
+.header{
+    grid-row: 1 / 1;
+}
+
+.main{
+    grid-column: 1 / 2;
+}
+
+.nav{
+    grid-column: 3 / 4;
+}
+
+.right{
+   grid-row: 4 / 5;
+}
+
+article{
+    padding: 20px;
+    border-bottom: 1px solid #003303;
+}
+
+article:last-child{
+    border-bottom: 0px;
+}
+
+.right{
+    background-color: #6bb377;
+}
+
+.right h3{
+    background-color: #ff5353;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.right a{
+    color: rgb(0, 32, 8);
+}
+
+li{
+    padding: 5px
+}
+
+a:hover {
+    color: rgb(10, 134, 10);
+}
+
+a:active {
+    color: #ff5353;
+}
+
+
+
+
+
+
