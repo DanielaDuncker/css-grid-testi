@@ -30,10 +30,11 @@
   padding: 10px;
   margin: 0 100px 0 100px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 50px;
 }
 
 .grid-container > div {
-  background-color: #f6fff5;
+  background-color: #cefac9;
   text-align: center;
   padding: 30px 0;
   font-size: 17px;
@@ -51,18 +52,21 @@
     grid-column-gap: 0;
 }
 
-
+.grid-container > .right{
+    background-color: #6bb377;
+}
 
 /* I dunno */
 
 
 
 body{
-    background-color: rgb(177, 177, 255);
+    background-color: #003303;
 }
 
 .header{
     grid-row: 1 / 1;
+    border-radius: 50px 50px 0px 0px;
 }
 
 .main{
@@ -116,8 +120,19 @@ a:active {
     color: #ff5353;
 }
 
+.header{
+    font-style: italic;
+    color: #1d5c00;
+    text-decoration: underline;
+    margin: 20px 0px 0px 0px;
+}
 
+h2{
+    color: #28973a;
+}
 
-
+.footer{
+    border-radius: 0px 0px 50px 50px;
+}
 
 
