@@ -68,6 +68,10 @@ body{
     grid-row: 1 / 1;
     border-radius: 50px 50px 0px 0px;
 }
+/* 
+.image{
+
+} */
 
 .main{
     grid-column: 1 / 2;
